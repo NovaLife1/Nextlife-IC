@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NextLife RP Regelwerk</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.9)),
+    url("nextlife-bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    padding:90px 20px 60px;
+}
+
+.header h1{
+    font-size:70px;
+    color:#4db8ff;
+    text-shadow:
+    0 0 10px #4db8ff,
+    0 0 20px #4db8ff,
+    0 0 40px rgba(77,184,255,0.7);
+}
+
+.header h2{
+    margin-top:15px;
+    font-size:28px;
+    letter-spacing:6px;
+    font-weight:300;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+/* ACCORDION */
+
+.accordion-item{
+    background:rgba(10,10,10,0.82);
+    border:1px solid rgba(77,184,255,0.2);
+    border-radius:18px;
+    margin-bottom:22px;
+    overflow:hidden;
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 0 20px rgba(0,0,0,0.4);
+
+    transition:0.3s;
+}
+
+.accordion-item:hover{
+    border-color:#4db8ff;
+
+    box-shadow:
+    0 0 20px rgba(77,184,255,0.25);
+}
+
+.accordion-button{
+    width:100%;
+    background:none;
+    border:none;
+    color:white;
+    text-align:left;
+    padding:28px 35px;
+    font-size:28px;
+    font-weight:600;
+    cursor:pointer;
+    position:relative;
+}
+
+.accordion-button::after{
+    content:"+";
+    position:absolute;
+    right:35px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:36px;
+    color:#4db8ff;
+    transition:0.3s;
+}
+
+.accordion-button.active::after{
+    transform:translateY(-50%) rotate(45deg);
+}
+
+.accordion-content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s ease;
+}
+
+.content{
+    padding:0 35px 35px;
+    color:#d6d6d6;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.content h3{
+    color:#4db8ff;
+    margin-top:30px;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.content p{
+    margin-bottom:18px;
+}
+
+.content ul{
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.content li{
+    margin-bottom:8px;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#4db8ff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:42px;
+    }
+
+    .header h2{
+        font-size:18px;
+    }
+
+    .accordion-button{
+        font-size:21px;
+        padding:22px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>NEXTLIFE RP</h1>
+    <h2>REGELWERK</h2>
+</div>
+
+<div class="container">
+
+    <!-- Allgemein -->
+
+    <div class="accordion-item">
+
+        <button class="accordion-button">
+            §1 Allgemein
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+<h3>FAIL-RP</h3>
+
+<p>
+Als Fail RP zählen sämtliche Aktionen und oder Verhalten, welches als unrealistisch betrachtet werden kann.
+Eine Einschätzung ob es sich um Fail-RP handelt, darf nur durch das NextLife Team bewertet werden.
+</p>
+
+<ul>
+<li>Gefesselte Personen dürfen keine unrealistischen Aktionen durchführen.</li>
+<li>Cop-Baiting ist verboten.</li>
+<li>Bewusstlose oder tote Personen dürfen nicht sprechen.</li>
+<li>Leichen dürfen nicht versteckt oder geplündert werden.</li>
+<li>Unrealistische Fahrzeugaktionen gelten als FailRP.</li>
+<li>Das absichtliche Schießen durch Wände ist verboten.</li>
+<li>Das Farmen in Fahrzeugen ist verboten.</li>
+<li>Fahrzeuge dürfen nach Straftaten nicht direkt eingeparkt werden.</li>
+<li>Das Versenken von Fahrzeugen während einer Flucht ist verboten.</li>
+<li>Gangs und Mafien müssen sich passend zu ihrer Gruppierung verhalten.</li>
+<li>Namen müssen RP-fähig sein.</li>
+<li>Das Leben des eigenen Charakters muss geschützt werden.</li>
+<li>Schwere Demütigungen müssen nicht akzeptiert werden.</li>
+<li>Neu eingereiste Spieler besitzen 3 Stunden Schutz.</li>
+<li>Spieler mit Vollmaskierung können nicht erkannt werden.</li>
+<li>Das Flüchten in Garagen und Anwesen während einer RP-Situationen ist verboten.</li>
+<li>Private Themen gehören nicht ins RP.</li>
+<li>Blacklisted Wörter gelten als OOC-Talk.</li>
+<li>In den letzten 30 Minuten vor einer Sonnenwende dürfen keine Aktionen gestartet werden.</li>
+<li>Aus kugelsicheren Fahrzeugen darf nicht geschossen werden.</li>
+<li>Im RP wird Deutsch gesprochen, andere Sprachen nur, wenn es RP-technisch passt.
+</li>
+</ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RDM / VDM -->
+
+    <div class="accordion-item">
+
+        <button class="accordion-button">
+            §2 RDM / VDM / Schusscall
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+<h3>RDM</h3>
+
+<p>
+Random Deathmatch beschreibt das grundlose Töten oder Angreifen anderer Spieler ohne RP-Hintergrund.
+</p>
+
+<h3>VDM</h3>
+
+<p>
+Vehicle Deathmatch beschreibt das absichtliche Überfahren oder Rammen mit Fahrzeugen.
+</p>
+
+<h3>Schusscall</h3>
+
+<ul>
+<li>Vor Schüssen muss ein eindeutiger Schusscall erfolgen.</li>
+<li>Der Schusscall muss klar verständlich sein.</li>
+<li>Ein Schusscall ist 15 Minuten gültig.</li>
+<li>Schusscalls aus Luftfahrzeugen sind verboten.</li>
+<li>Schusswaffen sind immer das letzte Mittel.</li>
+<li>Gefesselte Personen dürfen nur mit RP-Hintergrund getötet werden.</li>
+<li>Drive-Bys sind nur erlaubt, wenn das Fahrzeug steht, und benötigen einen RP-Hintergrund sowie einen gültigen Schusscall.
+</li>
+</ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PowerRP -->
+
+    <div class="accordion-item">
+
+        <button class="accordion-button">
+            §3 PowerRP
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+<p>
+PowerRP beschreibt Handlungen, bei denen einer Gegenpartei keine realistische Möglichkeit bleibt zu reagieren.
+</p>
+
+<ul>
+<li>Spielern muss Zeit gegeben werden zu reagieren.</li>
+<li>Emotes in Kampfhandlungen gelten als PowerRP.</li>
+<li>Das Bedrängen von Medics ist verboten.</li>
+<li>Diebesgut darf nicht unrealistisch gesichert werden.</li>
+<li>Komplett kugelsichere Fahrzeuge dürfen nicht für Aktionen genutzt werden.</li>
+<li>Auftragskiller-RP ist verboten.</li>
+</ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Meta -->
+
+    <div class="accordion-item">
+
+        <button class="accordion-button">
+            §4 MetaGaming / Combat Logging / Trolling
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+<h3>MetaGaming</h3>
+
+<ul>
+<li>Externe Kommunikation während RP ist verboten.</li>
+<li>Streams dürfen während aktivem Spielen nicht geschaut werden.</li>
+<li>OOC-Informationen dürfen nicht IC genutzt werden.</li>
+</ul>
+
+<h3>Combat Logging</h3>
+
+<p>
+Das absichtliche Verlassen einer RP-Situation ist verboten.
+</p>
+
+<h3>Trolling</h3>
+
+<ul>
+<li>Dauerhafte Soundboards oder laute Musik sind verboten.</li>
+<li>Spieler dürfen nicht absichtlich provoziert werden.</li>
+</ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- New Life -->
+
+    <div class="accordion-item">
+
+        <button class="accordion-button">
+            §5 New-Life-Regel
+        </button>
+
+        <div class="accordion-content">
+            <div class="content">
+
+<p>
+Bewusstlose Spieler müssen auf einen Medic warten.
+</p>
+
+<ul>
+<li>Nach dem Aufwachen darf nicht erneut an der Situation teilgenommen werden.</li>
+<li>Der Ort des Geschehens muss 30 Minuten gemieden werden.</li>
+<li>Erinnerungen an die Situation gehen verloren.</li>
+<li>Medizinische Entscheidungen der Medics sind zu akzeptieren.</li>
+</ul>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const buttons = document.querySelectorAll(".accordion-button");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const content = button.nextElementSibling;
+
+        button.classList.toggle("active");
+
+        if(content.style.maxHeight){
+
+            content.style.maxHeight = null;
+
+        } else {
+
+            content.style.maxHeight = content.scrollHeight + "px";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
